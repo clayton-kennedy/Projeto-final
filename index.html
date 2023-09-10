@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Roboto -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+     <!-- Arquivos CSS -->
+     <link rel="stylesheet" href="./assets/css/geral.css">
+     <link rel="stylesheet" href="./assets/css/menu-topo.css">
+     <link rel="stylesheet" href="./assets/css/carrossel.css">
+     <link rel="stylesheet" href="./assets/css/section1.css">
+     <link rel="stylesheet" href="./assets/css/section2.css">
+     <link rel="stylesheet" href="./assets/css/bannerAgendamento.css">
+     <link rel="stylesheet" href="./assets/css/footer.css">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+     <!-- Arquivo Javascript -->
+     <script src="./assets/javascript/menuHamburguer.js" defer></script>
+     <script src="./assets/javascript/script.js" defer></script>
+
+     <title>Hospital da Beleza</title>
+</head>
+<body>
+          <header id="menu-topo">
+                    <div class="logo">
+                        <h1>Hospital da Beleza</h1>
+                    </div>
+                <nav id="nav">
+                    <button id="iconeMenu"><img src="./assets/imagens/icone-menu.png" alt="Botão do menu" class="iconeHamburguer"></button>
+                          
+                    <ul id="menu-navegacao">
+                              <li class="nav-item"><a href="index.html">Home</a></li>
+                              <li class="nav-item dropdown">
+                                <a href="#">Tratamentos para a Face</a>
+                                  <div class="dropdown-menu">
+                                    <a href="#">Limpeza de Pele</a><br>
+                                    <a href="#">Tratamentos Anti-idade</a><br>
+                                    <a href="#">Preenchimentos: Labial e Maxilares</a><br>
+                                    <a href="#">Fios de sustentação</a><br>
+                                    <a href="#">Sobrancelhas</a><br>
+                                  </div>
+                              </li>
+                                <li class="nav-item dropdown">
+                                  <a href="#">Tratamentos para o Corpo</a>
+                                  <div class="dropdown-menu">
+                                    <a href="#">Gordura Localizada</a><br>
+                                    <a href="#">Estrias</a><br>
+                                    <a href="#">Celulite</a><br>
+                                    <a href="#">Flacidez</a><br>
+                                    <a href="#">Manchas corporais</a><br>
+                                  </div>
+                                </li>
+                              <li class="nav-item dropdown">
+                                <a href="#">Tratamentos Capilares</a>
+                                <div class="dropdown-menu">
+                                  <a href="#">Item 1</a><br>
+                                  <a href="#">Item 2</a><br>
+                                  <a href="#">Item 3</a><br>
+                                  <a href="#">Item 4</a><br>
+                                  <a href="#">Item 5</a><br>
+                                </div>
+                              </li>
+                              <li class="nav-item"><a href="#">Agendamento</a></li>
+                              <button class="nav-item" id="botao-login"><a href="#">Entrar</a></button> 
+                              <a href="#" id="botao-cadastro">Registre-se</a>
+                            </ul>
+                </nav>
+          </header>
+          <!-- BOOTSTRAP -->
+          <div class="carrossel">
+               <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./assets/imagens/banner1.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/imagens/banner2.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/imagens/banner3.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./assets/imagens/banner4.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Próximo</span>
+                    </button>
+                  </div>
+          </div>
+          <!-- FIM BOOTSTRAP -->
+          <div class="ofertas">Ofertas Imperdíveis</div>
+          <section class="section1">
+            <div class="promocoes">
+              <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem de promoção"><br>
+              <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
+              <h2>12x 59,90</h2> <br>
+              <button class="comprarPromocao">Comprar</button>
+              </span>
+            </div>
+            <div class="promocoes">
+              <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem de promoção"><br>
+              <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
+              <h2>12x 59,90</h2> <br>
+              <button class="comprarPromocao">Comprar</button>
+              </span>
+            </div>
+            <div class="promocoes">
+              <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem de promoção"><br>
+              <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
+              <h2>12x 59,90</h2> <br>
+              <button class="comprarPromocao">Comprar</button>
+              </span>
+            </div>
+            <div class="promocoes">
+              <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem de promoção"><br>
+              <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
+              <h2>12x 59,90</h2> <br>
+              <button class="comprarPromocao">Comprar</button>
+              </span>
+            </div>
+          </section>
+          <section class="section2">
+               <div class="artigos">
+                    <!-- BOOTSTRAP -->
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                         <div class="carousel-inner">
+                           <div class="carousel-item active">
+                             <img src="./assets/imagens/carrossel/imagem1.jpeg" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img src="./assets/imagens/carrossel/imagem2.jpg" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img src="./assets/imagens/carrossel/imagem3.jpg" class="d-block w-100" alt="...">
+                           </div>
+                           <div class="carousel-item">
+                             <img src="./assets/imagens/carrossel/imagem4.jpg" class="d-block w-100" alt="...">
+                           </div>
+                         </div>
+                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Anterior</span>
+                         </button>
+                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="visually-hidden">Próximo</span>
+                         </button>
+                       </div>
+               </div>
+          </section>
+          <div class="bannerAgendamento">
+            <h1>Agende já sua avaliação</h1><br>
+            <input type="submit" value="Agendar" id="agendar">
+            </div>
+           </div> <!-- FIM BANNER-->
+
+          <footer>
+            Footer
+          </footer>
+
+     </div>
+     <!-- Bootstrap src-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

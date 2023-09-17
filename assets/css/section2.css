@@ -1,15 +1,88 @@
+@media screen and (max-width: 2560px) {
 .section2 {
      display: flex;
      flex-direction: column;
-     align-items: center;
      justify-content: center;
-     width: 100%;
-     height: 320px;
+     align-items: center;
+     width: 80%;
      margin: 0 auto;
-     background-color:aqua;
 }
-.artigos img{
-     width: 99%;
-     height: 300px;
+.artigo1{
+     background-color: #efefef;
+     display: flex;
+     justify-content: center;
+     width: 70%;
+     height: 200px;
+     margin: 0 30px;
+     border-radius: 20px;
+}
+.artigo1 span {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: justify;
+     width: 70%;
+     height: auto;
+     margin: 0 auto;
+     border-radius: 20px;
+}
+.artigo1 img {
+     width: 150px;
+     height: 200px;
      object-fit: cover;
+     border-radius: 20px;
+}
+.artigo1 button {
+     cursor: pointer;
+     padding: 3px;
+     width: 220px;
+     background-color: #0fc3e8;
+     border-radius: 20px;
+     color: white;
+     font-size: 1.1em;
+     font-weight: 400;
+     letter-spacing: 1px;
+     border: 1px solid #0088a3;
+}
+.artigo1 button:hover {
+     background-color: #51d1eb;
+}
+.artigo2{
+     display: flex;
+     justify-content: center;
+     width: 70%;
+     height: 200px;
+     margin: 0 30px;
+     border-radius: 20px;
+}
+.artigo2 span {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: justify;
+     width: 70%;
+     height: auto;
+     margin: 0 auto;
+}
+.artigo2 img {
+     width: 150px;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 20px;
+}
+.artigo2 button {
+     cursor: pointer;
+     padding: 3px;
+     width: 220px;
+     background-color: #0fc3e8;
+     border-radius: 20px;
+     color: white;
+     font-size: 1.1em;
+     font-weight: 400;
+     letter-spacing: 1px;
+     border: 1px solid #0088a3;
+}
+.artigo2 button:hover {
+     background-color: #51d1eb;
+}
 }

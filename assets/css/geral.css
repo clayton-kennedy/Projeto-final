@@ -4,3 +4,16 @@
      box-sizing: border-box;
      font-family: 'Roboto', sans-serif;
 }
+.tituloSection {
+     text-align: center;
+     height: 100px;
+     width: 80%;
+     padding: 0.5em  2em;
+     font-size: 2.5em;
+     margin: 0.5em auto;
+     text-shadow: 1px 2px 2px #000000;
+     color: #fff;
+     background-color: #0fc3e8;
+     -webkit-border-top-left-radius: 50px;
+     -webkit-border-bottom-right-radius: 50px;
+}

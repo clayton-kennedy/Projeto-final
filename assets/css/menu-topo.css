@@ -6,9 +6,7 @@
      width: 100%;
      height: 70px;
      padding: 2em;
-     box-sizing: border-box;
      margin: 0 auto;
-
 }
 .logo h1 {
      font-size: 2em;
@@ -20,7 +18,7 @@
 #menu-navegacao {
      display: flex;
      list-style: none;
-     margin: auto 5rem;
+     margin: 0 5rem;
      align-items: center;
      text-align: center;
 }
@@ -44,11 +42,11 @@
      display: none;
      position: absolute;
      border: 1px solid black;
-     z-index: 2;
+     z-index: 20;
 }
 .dropdown-menu a{
+     display: block;
      padding: 0;
-     display:block;
      text-decoration: none;
      color: black;
      background-color: white;

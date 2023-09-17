@@ -4,7 +4,8 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     width: 80%;
+     width: 100%;
+     height: auto;
      margin: 0 auto;
 }
 .artigo1{
@@ -12,8 +13,8 @@
      display: flex;
      justify-content: center;
      width: 70%;
-     height: 200px;
-     margin: 0 30px;
+     height: auto;
+     margin: 10px 30px;
      border-radius: 20px;
 }
 .artigo1 span {
@@ -21,7 +22,7 @@
      flex-direction: column;
      justify-content: center;
      text-align: justify;
-     width: 70%;
+     width: 80%;
      height: auto;
      margin: 0 auto;
      border-radius: 20px;
@@ -43,6 +44,7 @@
      font-weight: 400;
      letter-spacing: 1px;
      border: 1px solid #0088a3;
+     margin: 10px 0;
 }
 .artigo1 button:hover {
      background-color: #51d1eb;
@@ -51,8 +53,8 @@
      display: flex;
      justify-content: center;
      width: 70%;
-     height: 200px;
-     margin: 0 30px;
+     height: auto;
+     margin: 10px 30px;
      border-radius: 20px;
 }
 .artigo2 span {
@@ -60,7 +62,7 @@
      flex-direction: column;
      justify-content: center;
      text-align: justify;
-     width: 70%;
+     width: 80%;
      height: auto;
      margin: 0 auto;
 }
@@ -81,6 +83,7 @@
      font-weight: 400;
      letter-spacing: 1px;
      border: 1px solid #0088a3;
+     margin: 10px 0;
 }
 .artigo2 button:hover {
      background-color: #51d1eb;

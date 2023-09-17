@@ -11,6 +11,7 @@ footer {
      color: white;
      text-align: center;
      font-size: 1em;
+     margin: 0 auto;
 }
 .material-symbols-outlined {
   font-variation-settings:

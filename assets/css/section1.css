@@ -28,6 +28,7 @@
 }
 .promocoes img:hover {
      cursor: pointer;
+     filter: brightness(1.1);
 }
 .promocoes span{
      display: block;

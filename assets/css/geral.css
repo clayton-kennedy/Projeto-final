@@ -1,3 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url(./banner.css);
+@import url(./bannerAgendamento.css);
+@import url(./carrossel.css);
+@import url(./footer.css);
+@import url(./menu-topo.css);
+@import url(./section1.css);
+@import url(./section2.css);
+@import url(./section3.css);
+
+
 * {
      margin: 0;
      padding: 0;

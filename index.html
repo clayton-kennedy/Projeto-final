@@ -3,28 +3,16 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Font Roboto -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
      <!-- Arquivos CSS -->
      <link rel="stylesheet" href="./assets/css/geral.css">
-     <link rel="stylesheet" href="./assets/css/menu-topo.css">
-     <link rel="stylesheet" href="./assets/css/carrossel.css">
-     <link rel="stylesheet" href="./assets/css/section1.css">
-     <link rel="stylesheet" href="./assets/css/section2.css">
-     <link rel="stylesheet" href="./assets/css/section3.css">
-     <link rel="stylesheet" href="./assets/css/bannerAgendamento.css">
-     <link rel="stylesheet" href="./assets/css/footer.css">
+     <!-- Arquivos Javascript -->
+     <script src="./assets/javascript/script.js" defer></script>
      <!-- Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
      <!-- Icone Phone -->
      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-     <!-- Arquivos Javascript -->
-     <script src="./assets/javascript/menuHamburguer.js" defer></script>
-     <script src="./assets/javascript/script.js" defer></script>
 
-     <title>Hospital da Beleza</title>
+     <title>Clínica SENAI</title>
 </head>
 <body>
           <header id="menu-topo">
@@ -59,16 +47,18 @@
                               <li class="nav-item dropdown">
                                 <a href="#">Tratamentos Capilares</a>
                                 <div class="dropdown-menu">
-                                  <a href="#">Item 1</a><br>
-                                  <a href="#">Item 2</a><br>
-                                  <a href="#">Item 3</a><br>
-                                  <a href="#">Item 4</a><br>
-                                  <a href="#">Item 5</a><br>
+                                  <a href="#">Botox</a><br>
+                                  <a href="#">Hidratação</a><br>
+                                  <a href="#">Nutrição</a><br>
+                                  <a href="#">Reconstrução</a><br>
+                                  <a href="#">Umectação</a><br>
+                                  <a href="#">Acidificação</a><br>
+                                  <a href="#">Blindagem</a><br>
                                 </div>
                               </li>
-                              <li class="nav-item"><a href="#">Agendamento</a></li>
-                              <button class="nav-item" id="botao-login"><a href="#">Entrar</a></button> 
-                              <a href="#" id="botao-cadastro">Registre-se</a>
+                              <li class="nav-item"><a href="./assets/html/agendamento.html">Agendamento</a></li>
+                              <button class="nav-item" id="botao-login"><a href="./assets/html/tela_login.html">Entrar</a></button> 
+                              <a href="./assets/html/registro.html" id="botao-cadastro">Registre-se</a>
                             </ul>
                 </nav>
           </header>
@@ -132,27 +122,28 @@
             </span><h2>12x 59,90</h2>
               <button class="comprarPromocao">Comprar</button>
             </div>
-            <div class="promocoes">
-              <img src="./assets/imagens/banho-de-lua.jpg" alt="Imagem de promoção"><br>
-              <span>Compre um pacote de massagem corporal e ganhe um Banho de Lua. <br>
-            </span><h2>12x 59,90</h2>
-              <button class="comprarPromocao">Comprar</button>
-            </div>
           </section>
           <hr>
           <div class="tituloSection">Saiba mais sobre nossos serviços</div>
           <section class="section2">
                <div class="artigo1"><img src="./assets/imagens/lipoaspiraçao.jpg" alt="Imagem lipoaspiração"><span><h3>Lipoaspiração</h3>A Lipoaspiração é o nome dado a uma técnica que através da sucção retira o excesso de gordura de uma determinada região do corpo. Por sua vez, a Lipoaspiração ESCULTURA utiliza esta gordura retirada para a injeção em outras partes do corpo para preencher depressões ou modelando. Chamamos de enxerto de gordura.
-               <button>Clique para saber mais</button></span></div>
+               <a href="https://pt.wikipedia.org/wiki/Lipoaspira%C3%A7%C3%A3o" target="_blank"><button>Clique para saber mais</button></a></span></div>
+
+
                <div class="artigo2"><span><h3>Harmonização Facial</h3>A harmonização facial caseira consiste em técnicas de massagem que visam reproduzir o efeito de “lifting” no rosto. Alguns profissionais da área da saúde recomendam a massagem facial como forma de estimular os músculos dessa região, porém, a técnica não é recomendada para todos os tipos de pele.
-               <button>Clique para saber mais</button></span><img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Imagem harmonização facial"></div>
+                <a href="https://pt.wikipedia.org/wiki/Harmoniza%C3%A7%C3%A3o_facial" target="_blank"><button>Clique para saber mais</button></a></span><img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Imagem harmonização facial"></div>
+
+
                <div class="artigo1"><img src="./assets/imagens/podologia.jpg" alt="Imagem Podologia"><span><h3>Podologia</h3>A Podologia é uma ciência que estuda a anatomia, a fisiologia e a patologia dos pés. Essa análise permite verificar se as extremidades dos membros inferiores estão saudáveis, ou seja, livres de alterações que geram dores, mudanças na forma de pisar ou caminhar, bem como mudanças estéticas.
-               <button>Clique para saber mais</button></span></div>
-               <div class="artigo2"><span><h3>Preenchimento Labial</h3>O preenchimento labial tem como principal objetivo aperfeiçoar e aumentar o volume e formato dos lábios. Assim como nos demais preenchimentos faciais, o preenchimento labial consiste no uso do ácido hialurônico, uma substância que é aplicada nos lábios com o auxílio de uma agulha ou microcânulas.
-               <button>Clique para saber mais</button></span><img src="./assets/imagens/preenchimento-labial.jfif" alt="Imagem preenchimento labial"></div>
+               <a href="https://pt.wikipedia.org/wiki/Podologia" target="_blank"><button>Clique para saber mais</button></a></span></div>
+
+
+               <div class="artigo2"><span><h3>Ácido hialurônico</h3>O ácido hialurônico é uma substância recomendada para todos os tipos de pele. Porém, ele é especialmente recomendado para pele seca ou pele desidratada por conta da sua alta capacidade de hidratação. Se você tem pele oleosa ou pele com cravos e espinhas, pode utilizar o ácido hialurônico sem medo.
+                <a href="https://pt.wikipedia.org/wiki/%C3%81cido_hialur%C3%B4nico" target="_blank"><button>Clique para saber mais</button></a></span><img src="./assets/imagens/preenchimento-labial.jfif" alt="Imagem preenchimento labial"></div>
           </section>
           <div class="tituloSection">Depoimentos</div>
           <section class="section3">
+            <!-- BOOTSTRAP -->
             <div id="carouselExample2" class="carousel slide">
               <div class="carousel-inner2">
                 <div class="carousel-item active">
@@ -160,12 +151,12 @@
                   <p>Me sinto muito bem, atendimento excelente e profissionais maravilhosas. Super indico!</p>
                 </div>
                 <div class="carousel-item active">
-                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: Cristiane Frazão</span><br>
-                  <p>Me sinto muito bem, atendimento excelente e profissionais maravilhosas. Super indico!</p>
+                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: hfghfghfgh</span><br>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id aperiam veritatis dignissimos quo hic voluptas provident harum ratione. Animi, voluptatibus. Cupiditate quas itaque nam aliquid deleniti incidunt corporis molestias hic?</p>
                 </div>
                 <div class="carousel-item active">
-                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: Cristiane Frazão</span><br>
-                  <p>Me sinto muito bem, atendimento excelente e profissionais maravilhosas. Super indico!</p>
+                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: 89289289</span><br>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nisi perspiciatis facilis? Neque quaerat omnis autem architecto repellat, aspernatur natus tempora modi, nemo et sit deserunt repudiandae optio possimus. Tenetur?</p>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -177,6 +168,8 @@
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
+            <!-- FIM DO BOOTSTRAP -->
+            <button id="botaoComentario">Compartilhe sua experiência</button>
           </section>
           <div class="bannerAgendamento">
             <video autoplay loop muted>

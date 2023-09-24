@@ -32,8 +32,9 @@ Face
 ● Sobrancelhas
 
 Consulta:
-O cliente entra com o dia, mês, ano e o horário que deseja. E também seleciona o médico que deseja consultar (criar uma lista
-de médicos). Deverá conter também uma caixa de mensagem para o cliente escrever o motivo da consulta se achar necessário.
+O cliente entra com o dia, mês, ano e o horário que deseja. 
+E também seleciona o médico que deseja consultar (criar uma listade médicos). 
+Deverá conter também uma caixa de mensagem para o cliente escrever o motivo da consulta se achar necessário.
 
 Cadastro:
 ● Nome:

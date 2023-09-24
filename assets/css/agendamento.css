@@ -1,0 +1,65 @@
+@import url(./geral.css);
+@import url(./banner.css);
+@import url(./bannerAgendamento.css);
+@import url(./carrossel.css);
+@import url(./footer.css);
+@import url(./menu-topo.css);
+@import url(./section1.css);
+@import url(./section2.css);
+@import url(./section3.css);
+@import url(./tela_login.css);
+
+#campoAgendamento {
+     width: 60%;
+     height: 700px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin: 150px auto;
+}
+#campoAgendamento a {
+     text-decoration: none;
+     color: black;
+}
+#campoAgendamento img {
+     width: 33em;
+     height: 40em;
+     user-select: none;
+     margin: 0 30px;
+}
+#campoAgendamento form {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+#campoAgendamento form > input {
+     padding: 0.2em 1em;
+     width: 80%;
+     margin: 5px;
+     border-radius: 5px;
+     outline: none;
+}
+#dataAgendamento, #numeroWhats {
+     max-width: 40%;
+}
+#botaoAgendamento {
+     border-radius: 10px;
+     margin: 10px auto;
+     padding: 1em 2em;
+}
+#comentarioCliente {
+     border-radius: 5px;
+}
+#botaoAgendamento:hover {
+     background-color: #0fc3e8;
+}
+#qualMedico {
+     padding: 0.5em 1em;
+     border-radius: 5px;
+     margin: 5px 0;
+     max-width: 40%;
+}
+#comentarioCliente {
+     padding: 1em;
+}

@@ -1,0 +1,47 @@
+@import url(./geral.css);
+@import url(./bannerAgendamento.css);
+@import url(./carrossel.css);
+@import url(./footer.css);
+@import url(./menu-topo.css);
+@import url(./section1.css);
+@import url(./section2.css);
+@import url(./section3.css);
+@import url(./tela_login.css);
+@import url(./agendamento.css);
+@import url(./agendadado.css);
+
+#criarConta {
+     width: 45%;
+     height: 500px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin: auto;
+}
+#criarConta a {
+     text-decoration: none;
+     color: black;
+}
+.dadosPessoais {
+     width: 50%;
+}
+.dadosPessoais input, .dadosAcesso input{
+     width: 70%;
+     padding: 0.2em 0.5em;
+     margin: 3px auto;
+     border-radius: 5px;
+     outline: none;
+}
+.dadosAcesso {
+     width: 50%;
+}
+#criarCadastro {
+     margin: 10px auto;
+     cursor: pointer;
+     padding: 0.5em 1em;
+     border-radius: 10px;
+}
+#criarCadastro:hover {
+     background-color: #0fc3e8;
+     
+}

@@ -11,10 +11,10 @@
 
 #campoAgendado {
      width: 50%;
-     height: 500px;
+     height: 100vw;
      display: flex;
      align-items: center;
-     justify-content: center;
+     justify-content: start;
      flex-direction: column;
      margin: auto;
      font-family: Arial, Helvetica, sans-serif;
@@ -24,4 +24,11 @@
 }
 #campoAgendado h2 {
      text-align: center;
+}
+#ulAgendado{
+     margin: 20px auto;
+     text-align: justify;
+}
+#ulAgendado li {
+     text-align: justify;
 }

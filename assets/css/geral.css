@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url(./banner.css);
 @import url(./bannerAgendamento.css);
 @import url(./carrossel.css);
 @import url(./footer.css);
@@ -22,7 +21,7 @@
      width: 80%;
      padding: 0.5em  2em;
      font-size: 2.5em;
-     margin: 0.3em auto;
+     margin: 0.5em auto;
      text-shadow: 1px 2px 2px #000000;
      color: #fff;
      background-color: #0fc3e8;

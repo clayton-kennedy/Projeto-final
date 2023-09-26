@@ -7,6 +7,7 @@
      <link rel="stylesheet" href="./assets/css/geral.css">
      <!-- Arquivos Javascript -->
      <script src="./assets/javascript/script.js" defer></script>
+     <script src="./assets/javascript/depoimento.js" defer></script>
      <!-- Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
      <!-- Icone Phone -->
@@ -15,7 +16,7 @@
      <title>Clínica SENAI</title>
 </head>
 <body>
-          <header id="menu-topo">
+<header id="menu-topo">
                     <div class="logo">
                         <h1>Clínica SENAI</h1>
                     </div>
@@ -62,8 +63,8 @@
                             </ul>
                 </nav>
           </header>
-          <!-- BOOTSTRAP -->
-          <div class="carrossel">
+<!-- BOOTSTRAP -->
+<div class="carrossel">
                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -89,9 +90,9 @@
                     </button>
                   </div>
           </div>
-          <!-- FIM BOOTSTRAP -->
-          <div class="tituloSection">Ofertas Imperdíveis</div>
-          <section class="section1">
+<!-- FIM BOOTSTRAP -->
+    <div class="tituloSection">Ofertas Imperdíveis</div>
+<section class="section1">
             <div class="promocoes">
               <img src="./assets/imagens/limpeza-de-pele.jpg" alt="Imagem de promoção"><br>
               <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
@@ -123,9 +124,8 @@
               <button class="comprarPromocao">Comprar</button>
             </div>
           </section>
-          <hr>
-          <div class="tituloSection">Saiba mais sobre nossos serviços</div>
-          <section class="section2">
+    <div class="tituloSection">Saiba mais sobre nossos serviços</div>
+<section class="section2">
                <div class="artigo1"><img src="./assets/imagens/lipoaspiraçao.jpg" alt="Imagem lipoaspiração"><span><h3>Lipoaspiração</h3>A Lipoaspiração é o nome dado a uma técnica que através da sucção retira o excesso de gordura de uma determinada região do corpo. Por sua vez, a Lipoaspiração ESCULTURA utiliza esta gordura retirada para a injeção em outras partes do corpo para preencher depressões ou modelando. Chamamos de enxerto de gordura.
                <a href="https://pt.wikipedia.org/wiki/Lipoaspira%C3%A7%C3%A3o" target="_blank"><button>Clique para saber mais</button></a></span></div>
 
@@ -141,46 +141,36 @@
                <div class="artigo2"><span><h3>Ácido hialurônico</h3>O ácido hialurônico é uma substância recomendada para todos os tipos de pele. Porém, ele é especialmente recomendado para pele seca ou pele desidratada por conta da sua alta capacidade de hidratação. Se você tem pele oleosa ou pele com cravos e espinhas, pode utilizar o ácido hialurônico sem medo.
                 <a href="https://pt.wikipedia.org/wiki/%C3%81cido_hialur%C3%B4nico" target="_blank"><button>Clique para saber mais</button></a></span><img src="./assets/imagens/preenchimento-labial.jfif" alt="Imagem preenchimento labial"></div>
           </section>
-          <div class="tituloSection">Depoimentos</div>
-          <section class="section3">
-            <!-- BOOTSTRAP -->
-            <div id="carouselExample2" class="carousel slide">
-              <div class="carousel-inner2">
-                <div class="carousel-item active">
-                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: Cristiane Frazão</span><br>
-                  <p>Me sinto muito bem, atendimento excelente e profissionais maravilhosas. Super indico!</p>
-                </div>
-                <div class="carousel-item active">
-                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: hfghfghfgh</span><br>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id aperiam veritatis dignissimos quo hic voluptas provident harum ratione. Animi, voluptatibus. Cupiditate quas itaque nam aliquid deleniti incidunt corporis molestias hic?</p>
-                </div>
-                <div class="carousel-item active">
-                  <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Foto do cliente"><span>Cliente: 89289289</span><br>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nisi perspiciatis facilis? Neque quaerat omnis autem architecto repellat, aspernatur natus tempora modi, nemo et sit deserunt repudiandae optio possimus. Tenetur?</p>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            <!-- FIM DO BOOTSTRAP -->
-            <button id="botaoComentario">Compartilhe sua experiência</button>
-          </section>
-          <div class="bannerAgendamento">
+    <div class="tituloSection">Depoimentos</div>
+<section class="section3">
+  <div class="cardDepoimentos">
+      <img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Imagem cliente depoimentos">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</p>
+    </div>
+  <div class="cardDepoimentos">
+      <img src="./assets/imagens/limpeza-de-pele.jpg" alt="Imagem cliente depoimentos">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</p>
+    </div>
+  <div class="cardDepoimentos">
+      <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem cliente depoimentos">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</p>
+    </div>
+  </section>
+  <button id="botaoComentar">Deixe seu depoimento</button>
+  <div id="digitarDepoimentos" class="hide">
+  <textarea cols="30" rows="7" maxlength="230"></textarea>
+  <button id="postarDepoimento">Enviar</button>
+  </div>
+<div class="bannerAgendamento">
             <video autoplay loop muted>
               <source src="./assets/video/video-banner.mp4" type="video/mp4">
             </video>
             <h1>Agende a sua avaliação agora mesmo<br>
             <h2>e converse com um de nossos especialistas.</h2></h1>
-            <button><a href="#">Agendar</a></button>
+            <button><a href="./assets/html/agendamento.html">Agendar</a></button>
             </div>
            </div>
-          <footer>
+<footer>
             <div class="contatos">
             Clínica SENAI <br><span class="material-symbols-outlined">
               call 
@@ -201,8 +191,7 @@
               <img src="./assets/imagens/instagram.png" alt="Ícone instagram">
               <img src="./assets/imagens/linkedin.png" alt="Ícone linkedin">
             </div>
-          </footer>
-
+        </footer>
      </div>
      <!-- Bootstrap src-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>

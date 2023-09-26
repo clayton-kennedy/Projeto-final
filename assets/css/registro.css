@@ -12,7 +12,8 @@
 
 #criarConta {
      width: 45%;
-     height: 500px;
+     height: 100vh;
+     max-height: 700px;
      display: flex;
      align-items: center;
      justify-content: space-around;

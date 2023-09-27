@@ -36,13 +36,13 @@
 .dadosAcesso {
      width: 50%;
 }
-#criarCadastro {
+#botaoCriarCadastro {
      margin: 10px auto;
      cursor: pointer;
      padding: 0.5em 1em;
      border-radius: 10px;
 }
-#criarCadastro:hover {
+#botaoCriarCadastro:hover {
      background-color: #0fc3e8;
      
 }

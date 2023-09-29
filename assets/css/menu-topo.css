@@ -1,4 +1,4 @@
-@media screen and (max-width: 2560px) {
+
 #menu-topo {
      display: flex;
      align-items: center;
@@ -83,7 +83,6 @@
      background: transparent;
      border: none;
 } 
-}   
 /* ################################# */
 @media screen and (max-width: 750px) {
      #menu-topo {
@@ -114,7 +113,8 @@
      color: black;
 } 
 #nav.active #menu-navegacao {
-     display: block;
+     display: flex;
+     flex-direction: column;
 }
 #menu-navegacao a {
      color: #000;

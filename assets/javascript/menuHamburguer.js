@@ -1,19 +1,6 @@
-// const iconeMenu = document.getElementById('iconeMenu');
-
-// function mostrarMenu() {
-//     const nav = document.getElementById('nav');
-//     nav.classList.toggle('active');
-// }
-// iconeMenu.addEventListener('click', mostrarMenu);
-
-function mostrarMenu() {
-    let nav = document.querySelector('nav');
-    if (nav.classList.contains('active')) {
-        nav.classList.remove('active');
-        document.querySelector('.iconeHamburguer').src = "./assets/imagens/icone-menu.png";
-    } else {
-        nav.classList.add('active');
-        document.querySelector('.iconeHamburguer').src = "./assets/imagens/icone-menu-fechar.png";
-    }
+export function mostrarMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+    alert('clicou')
+    console.log('click');
 }
-iconeMenu.addEventListener('click', mostrarMenu);

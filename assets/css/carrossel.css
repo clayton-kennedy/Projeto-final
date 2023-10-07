@@ -1,16 +1,15 @@
 .carrossel {
+     width: auto;
+     max-width: 99%;
      display: flex;
-     align-items: center;
-     justify-content: center;
-     height: 595px;
+     height: 37.1em;
+     margin: 0;
      z-index: -1;
-     overflow: hidden;
-     width: 100%;
-     box-shadow: 0px 0px 40px inset black;
 }
 .carrossel img{
-     margin: auto;
-     width: 100%;
-     height: 595px;
+     margin: 0;
+     width: auto;
+     max-width: 98vw;
+     height: 37.1em;
      object-fit: cover;
 }

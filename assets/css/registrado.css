@@ -1,0 +1,103 @@
+@import url(./footer.css);
+@import url(./geral.css);
+@import url(./menu-topo.css);
+
+@media (min-width: 200px) {
+     #campoRegistro {
+          width: 90%;
+          height: auto;
+          max-height: 62.5em;
+          margin: 0.5em auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     #h2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 2.5em;
+          font-weight: bold;
+     }
+     .imagemCadastro {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+     .imagemCadastro img {
+          width: 7em;
+          height: 7em;
+          border-radius: 50%;
+     }
+     .dadosCadastro {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+     }
+     #botaoDeslogar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          border-radius: 10px;
+          font-size: 1.4em;
+          padding: 1em 3em;
+          background-color: #3edfff;
+          margin-bottom: 2em;
+     }
+}
+@media (min-width: 750px) {
+     #campoRegistro {
+          width: 95vw;
+          height: auto;
+          margin: 0.5em auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5em;
+     }
+     #h2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 2.5em;
+          font-weight: bold;
+     }
+     .imagemCadastro {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+     }
+     .imagemCadastro img {
+          width: 7em;
+          height: 7em;
+          border-radius: 50%;
+     }
+     .dadosCadastro {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+     }
+     .dadosCadastro li {
+          list-style: none;
+     }
+     #botaoDeslogar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          border-radius: 10px;
+          font-size: 1.4em;
+          padding: 1em 3em;
+          background-color: #3edfff;
+          margin-bottom: 2em;
+     }
+}

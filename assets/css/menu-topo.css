@@ -1,151 +1,262 @@
-
-#menu-topo {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     width: 100%;
-     height: 70px;
-     padding: 1em;
-     margin: 0 auto;
-}
-.logo h1 {
-     font-size: 2em;
-     font-weight: bold;
-     margin-left: 150px;
-     color: #0fc3e8;
-     text-shadow: 1px 1px 1px rgb(120, 120, 120);
-}
-#menu-navegacao {
-     display: flex;
-     list-style: none;
-     margin: 0 5rem;
-     align-items: center;
-     text-align: center;
-}
-#menu-navegacao li {
-     display: inline-block;
-}
-#menu-navegacao li a {
-     display: inline-block;
-     padding: 0.8em 2em;
-}
-#menu-navegacao li a:hover {
-     background-color: rgb(245, 245, 245);
-     color: #0fc3e8;
-}
-#menu-navegacao a {
-     color: black;
-     text-decoration: none;
-     font-size: 0.9em;
-}
-.dropdown-menu {
-     display: none;
-     position: absolute;
-     border: 1px solid black;
-     z-index: 20;
-}
-.dropdown-menu a{
-     display: block;
-     padding: 0;
-     text-decoration: none;
-     color: black;
-     background-color: white;
-     width: 100%;
-}
-.dropdown:hover .dropdown-menu {
-     display: block;
-}
-#botao-login {
-     background-color: #0fc3e8;
-     padding: 8px;
-     width: 100px;
-     border-radius: 10px;
-     border: 1px solid #00738a;
-     box-shadow: 1px 1px 5px rgb(198, 198, 198);
-     margin: auto 10px;
-}
-#botao-login a {
-     font-weight: 400;
-     letter-spacing: 1px;
-     text-decoration: none;
-     color: white;
-}
-#botao-login:hover {
-     background-color: #51d1eb;
-}
-#botao-cadastro:hover{
-     color: #0fc3e8;
-     text-decoration: underline;
-}
-#iconeMenu {
-     display: none;
-     cursor: pointer;
-     background: transparent;
-     border: none;
-} 
-/* ################################# */
-@media screen and (max-width: 750px) {
+@media (min-width: 200px) {
      #menu-topo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100vw;
+          height: 4.3em;
+          padding: 1em;
+          margin: 0;
+          top: 0;
           background-color: white;
-          z-index: 1;
+          position: fixed;
+          z-index: 10000;
+     }
+     .logo h1 {
+          font-size: 1.6em;
+          font-weight: bold;
+          margin-left: 1em;
+          color: #3edfff;
+          text-shadow: 1px 1px 1px #787878;
+     }
+     #menu-navegacao {
+          display: none;
+          list-style: none;
+          margin: 1em 0;
+          align-items: center;
+          justify-content: flex-start;
+          text-align: center;
+          font-size: 1em;
+          width: 99vw;
+          height: 100%;
+          position: fixed;
+          left: 0;
+          z-index: 1000;
+          background-color: white;
+     }
+     #menu-navegacao li {
+          display: inline-block;
+          margin: 0.2em 0;
+     }
+     #menu-navegacao li a {
+          display: inline-block;
+          padding: 0.8em 2em;
+     }
+     #menu-navegacao li a:hover {
+          color: #00b3d6;
+     }
+     #menu-navegacao a {
+          color: black;
+          text-decoration: none;
+          font-size: 1em;
+     }
+     .dropdown-menu {
+          display: none;
+          position: absolute;
+          border: 1px solid black;
+          z-index: 20;
+     }
+     .dropdown-menu a{
+          display: block;
+          padding: 0;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          width: 100%;
+     }
+     #botao-login {
+          background-color: #00c8ef;
+          padding: 0.5em;
+          height: auto;
+          width: 10em;
+          border-radius: 0.8em;
+          border: 1px solid #004755;
+          box-shadow: 1px 1px 0.4em rgb(198, 198, 198);
+          font-weight: bold;
+     }
+     #botao-login a {
+          font-weight: 400;
+          letter-spacing: 1px;
+          font-size: 1.3em;
+          font-weight: bold;
+          text-decoration: none;
+          color: black;
+     }
+     #menu-navegacao #sair:hover {
+          width: 100%;
+          height: 100%;
+          background-color: #e3e3e3;
+     }
+     #menu-navegacao #botao-login a:hover {
+          color: black;
+     }
+     #botao-login:hover {
+          background-color: #00aed1;
+          color: black;
+     }
+     #iconeMenu {
+          display: block;
+          cursor: pointer;
+          background: transparent;
+          border: none;
+          width: 3em;
+          height: 3em;
+          top: 0;
+          right: 0;
+     } 
+     #nav.active #menu-navegacao {
+          display: flex;
+          flex-direction: column;
+     }
+     .dropdown:hover .dropdown-menu {
+          display: none;
+     }
 }
-.botao-login {
-     display: none;
+@media (min-width: 360px) {
+     #menu-navegacao {
+          font-size: 1.4em;
+          top: 2em;
+     }
 }
-#iconeMenu {
-     display: flex;
+@media (min-width: 750px) {
+     #menu-topo {
+          height: 6em;
+     }
+     #menu-navegacao {
+          font-size: 2em;
+          top: 3;
+     }
 }
-#iconeMenu img {
-     width: 40px;
-     height: 40px;
-     margin-right: 5px ;
+@media (min-width: 1000px) {
+     #menu-topo {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 100vw;
+          height: 5em;
+          margin: 0;
+          padding: 0;
+     }
+     #menu-navegacao {
+          width: 100%;
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0 0.4em;
+          top: 0;
+          align-items: center;
+          text-align: center;
+          position: static;
+          font-size: 1em;
+     }
+     #menu-navegacao li a{
+          padding: 0 1em;
+          margin: 0;
+     }
+     #botao-login {
+          height: 50px;
+          width: 12em;
+          padding-bottom: 1em;
+     }
+     .dropdown-menu {
+          display: none;
+          position: absolute;
+          border: 1px solid black;
+          z-index: 20;
+     }
+     .dropdown-menu a{
+          display: block;
+          padding: 0;
+          text-decoration: none;
+          color: black;
+          background-color: white;
+          width: 100%;
+     }
+     .dropdown:hover .dropdown-menu {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          width: 100%;
+     }
+     #iconeMenu {
+          display: none;
+     } 
+
+     
 }
-#menu-navegacao {
-     display: none;
-     text-align: center;
-     position: absolute;
-     z-index: 100;
-     width: 101vw;
-     height: 45vh;
-     top: 69px;
-     right: -5%;
-     background-color: white;
-     color: black;
-} 
-#nav.active #menu-navegacao {
-     display: flex;
-     flex-direction: column;
-}
-#menu-navegacao a {
-     color: #000;
-     text-decoration: none;
-}
-#menu-navegacao li a:hover {
-     color: #FFF;
-}
-#menu-navegacao li:hover {
-     background-color: #aa9882;
-}
-#menu-navegacao button {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 60%;
-     height: 50px;
-     padding: 1em;
-     color: white;
-     font-size: 1.3em;
-     letter-spacing: 1px;
-     background-color: #b5a28b;
-     margin: 2em auto;
-     border: 1px solid gray;
-     border-radius: 10px;
-     box-shadow: 1px 1px 1px gray;
-     cursor: pointer;
-}
-#menu-navegacao button a {
-     color: white;
-     font-size: 1.3em;
-     font-weight: bold;
-}
+@media (min-width: 1500px) {
+          #menu-topo {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               width: 90%;
+               height: 4.3em;
+               margin: 0 auto;
+          }
+          #botao-login {
+               padding: 0;
+               margin: 0;
+               display: flex;
+               text-align: center;
+               align-items: center;
+               justify-content: center;
+          }
+          .logo h1 {
+               font-size: 2em;
+               font-weight: bold;
+               margin-left: 1em;
+               color: #00c8ef;
+               text-shadow: 1px 1px 1px rgb(120, 120, 120);
+          }
+          #menu-navegacao {
+               display: flex;
+               list-style: none;
+               margin: 0 5rem;
+               align-items: center;
+               text-align: center;
+          }
+          #menu-navegacao li {
+               display: inline-block;
+          }
+          #menu-navegacao li a {
+               display: inline-block;
+               padding: 0.8em 2em;
+          }
+          #menu-navegacao li a:hover {
+               color: #00b0d3;
+          }
+          #menu-navegacao a {
+               color: black;
+               text-decoration: none;
+               font-size: 0.9em;
+          }
+          .dropdown-menu {
+               display: none;
+               position: absolute;
+               border: 1px solid black;
+               z-index: 20;
+          }
+          .dropdown-menu a{
+               display: block;
+               padding: 0;
+               text-decoration: none;
+               color: black;
+               background-color: white;
+               width: 100%;
+          }
+          .dropdown:hover .dropdown-menu {
+               display: block;
+          }
+          #iconeMenu {
+               display: none;
+               cursor: pointer;
+               background: transparent;
+               border: none;
+          } 
+          #iconeMenu {
+               width: 3em;
+               height: 3em;
+          }
+          
 }

@@ -1,18 +1,10 @@
-@import url(./geral.css);
-@import url(./bannerAgendamento.css);
-@import url(./carrossel.css);
 @import url(./footer.css);
+@import url(./geral.css);
 @import url(./menu-topo.css);
-@import url(./section1.css);
-@import url(./section2.css);
-@import url(./section3.css);
-@import url(./tela_login.css);
-@import url(./agendamento.css);
-@import url(./agendadado.css);
 
 #esqueceuSenha {
-     width: 80%;
-     height: 500px;
+     width: 95vw;
+     height: 31.2em;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -20,16 +12,16 @@
      margin: auto;
 }
 #email-recuperar {
-     padding: 0.5em 1em;
      width: 100%;
-     border-radius: 10px;
+     padding: 0.5em 7em;
+     border-radius: 0.7em;
      outline: none;
 }
 #botao-recuperar {
      padding: 0.5em 1em;
-     width: 10%;
-     border-radius: 10px;
+     width: 100px;
+     border-radius: 0.7em;
 }
 #botao-recuperar:hover {
-     background-color: #0fc3e8;
+     background-color: #3edfff;
 }

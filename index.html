@@ -3,10 +3,13 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Clínica de estética localizada em Taguatinga, com especializações em Lipo LAD, Preenchimento labial, tratamento de combate a gordura localizada, celulite e calvice.">
+     <!-- FavIcon -->
+     <link rel = "shortcut icon" type = "imagem/x-icon" href = "./assets/imagens/medical.png"/>
      <!-- Arquivos CSS -->
      <link rel="stylesheet" href="./assets/css/geral.css">
      <!-- Arquivos Javascript -->
-     <script src="./assets/javascript/script.js" defer></script>
+     <script src="./assets/javascript/menuHamburguer.js" defer></script>
      <script src="./assets/javascript/depoimento.js" defer></script>
      <!-- Bootstrap -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -21,11 +24,11 @@
                         <h1>Clínica SENAI</h1>
                     </div>
                 <nav id="nav">
-                    <button id="iconeMenu"><img src="./assets/imagens/icone-menu.png" alt="Botão do menu" class="iconeHamburguer"></button>
-                          
-                    <ul id="menu-navegacao">
-                              <li class="nav-item"><a href="index.html">Home</a></li>
-                              <li class="nav-item dropdown">
+                    <img id="iconeMenu" src="./assets/imagens/icone-menu.png" alt="Botão do menu">
+                  
+                  <ul id="menu-navegacao">
+                      <li class="nav-item"><a href="index.html">Home</a></li>
+                      <li class="nav-item dropdown">
                                 <a href="#">Tratamentos para a Face</a>
                                   <div class="dropdown-menu">
                                     <a href="#">Limpeza de Pele</a><br>
@@ -35,7 +38,7 @@
                                     <a href="#">Sobrancelhas</a><br>
                                   </div>
                               </li>
-                                <li class="nav-item dropdown">
+                              <li class="nav-item dropdown">
                                   <a href="#">Tratamentos para o Corpo</a>
                                   <div class="dropdown-menu">
                                     <a href="#">Gordura Localizada</a><br>
@@ -58,9 +61,12 @@
                                 </div>
                               </li>
                               <li class="nav-item"><a href="./assets/html/agendamento.html">Agendamento</a></li>
-                              <button class="nav-item" id="botao-login"><a href="./assets/html/tela_login.html">Entrar</a></button> 
-                              <a href="./assets/html/registro.html" id="botao-cadastro">Registre-se</a>
-                            </ul>
+                              <li class="nav-item dropdown" id="botao-login"><a href="./assets/html/tela_login.html">Sua Conta</a>
+                              <div class="dropdown-menu">
+                                <a href="./index.html" id="sair">Deslogar</a>
+                              </li>
+                              </div>
+                              </ul>
                 </nav>
           </header>
 <!-- BOOTSTRAP -->
@@ -72,12 +78,6 @@
                       </div>
                       <div class="carousel-item">
                         <img src="./assets/imagens/banner2.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/imagens/banner3.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./assets/imagens/banner4.jpg" class="d-block w-100" alt="Imagem de banner promocional" class="imgBannerMobile">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -91,7 +91,7 @@
                   </div>
           </div>
 <!-- FIM BOOTSTRAP -->
-    <div class="tituloSection">Ofertas Imperdíveis</div>
+      <div class="tituloSection">Ofertas Imperdíveis</div>
 <section class="section1">
             <div class="promocoes">
               <img src="./assets/imagens/limpeza-de-pele.jpg" alt="Imagem de promoção"><br>
@@ -100,71 +100,125 @@
               <button class="comprarPromocao">Comprar</button>
             </div>
             <div class="promocoes">
-              <img src="./assets/imagens/cutilagem.jpg" alt="Imagem de promoção"><br>
+              <img src="./assets/imagens/depilacao.jpg" alt="Imagem de promoção"><br>
               <span>Faça uma depilação completa e ganhe a cutilagem de pé e mão.<br>
-            </span><h2>12x 59,90</h2>
+            </span><h2>12x 29,90</h2>
               <button class="comprarPromocao">Comprar</button>
             </div>
             <div class="promocoes">
               <img src="./assets/imagens/banho-de-lua.jpg" alt="Imagem de promoção"><br>
               <span>Compre um pacote de massagem corporal e ganhe um Banho de Lua. <br>
-            </span><h2>12x 59,90</h2>
+            </span><h2>12x 49,90</h2>
               <button class="comprarPromocao">Comprar</button>
             </div>
             <div class="promocoes">
-              <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem de promoção"><br>
-              <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
-            </span><h2>12x 59,90</h2>
+              <img src="./assets/imagens/peeling.jpg" alt="Imagem de promoção"><br>
+              <span>Faça um tratamento de pele com Peeling e ganhe um Creme Anti-idade. <br>
+            </span><h2>12x 69,90</h2>
               <button class="comprarPromocao">Comprar</button>
             </div>
             <div class="promocoes">
-              <img src="./assets/imagens/limpeza-de-pele2.jpg" alt="Imagem de promoção"><br>
-              <span>Contrate um tratamento anti-idade e ganhe uma limpeza de pele facial. <br>
-            </span><h2>12x 59,90</h2>
+              <img src="./assets/imagens/tratamento-cabelo.jpg" alt="Imagem de promoção"><br>
+              <span>Para qualquer tratamento capilar, ganhe um kit anti queda. <br>
+            </span><h2>12x 29,90</h2>
               <button class="comprarPromocao">Comprar</button>
             </div>
           </section>
-    <div class="tituloSection">Saiba mais sobre nossos serviços</div>
+      <div class="tituloSection">Saiba mais sobre nossos serviços</div>
 <section class="section2">
-               <div class="artigo1"><img src="./assets/imagens/lipoaspiraçao.jpg" alt="Imagem lipoaspiração"><span><h3>Lipoaspiração</h3>A Lipoaspiração é o nome dado a uma técnica que através da sucção retira o excesso de gordura de uma determinada região do corpo. Por sua vez, a Lipoaspiração ESCULTURA utiliza esta gordura retirada para a injeção em outras partes do corpo para preencher depressões ou modelando. Chamamos de enxerto de gordura.
-               <a href="https://pt.wikipedia.org/wiki/Lipoaspira%C3%A7%C3%A3o" target="_blank"><button>Clique para saber mais</button></a></span></div>
+               <div class="artigo1"><img src="./assets/imagens/lipoaspiraçao.jpg" alt="Imagem lipoaspiração"><span><h3>
+                Lipoaspiração de Alta Definição - Lipo LAD</h3>A Lipoaspiração de alta definição é o procedimento que promove a redução da gordura localizada, além de melhor definição dos músculos. Uma barriga sequinha e digna de músculos bem definidos já se tornou realidade para quem busca melhorar o aspecto corporal, isso porque existe a Lipoaspiração de alta definição.
+               <a href="./assets/html/lipoaspiracao.html" ><button>Clique para saber mais</button></a></span></div>
 
+               <div class="artigo1"><img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Imagem harmonização facial"><span><h3>
+                Harmonização Facial</h3>A harmonização facial caseira consiste em técnicas de massagem que visam reproduzir o efeito de “lifting” no rosto. Alguns profissionais da área da saúde recomendam a massagem facial como forma de estimular os músculos dessa região, porém, a técnica não é recomendada para todos os tipos de pele.
+               <a href="#" ><button>Clique para saber mais</button></a></span></div>
 
-               <div class="artigo2"><span><h3>Harmonização Facial</h3>A harmonização facial caseira consiste em técnicas de massagem que visam reproduzir o efeito de “lifting” no rosto. Alguns profissionais da área da saúde recomendam a massagem facial como forma de estimular os músculos dessa região, porém, a técnica não é recomendada para todos os tipos de pele.
-                <a href="https://pt.wikipedia.org/wiki/Harmoniza%C3%A7%C3%A3o_facial" target="_blank"><button>Clique para saber mais</button></a></span><img src="./assets/imagens/harmonizaçao-facial.jpg" alt="Imagem harmonização facial"></div>
-
-
-               <div class="artigo1"><img src="./assets/imagens/podologia.jpg" alt="Imagem Podologia"><span><h3>Podologia</h3>A Podologia é uma ciência que estuda a anatomia, a fisiologia e a patologia dos pés. Essa análise permite verificar se as extremidades dos membros inferiores estão saudáveis, ou seja, livres de alterações que geram dores, mudanças na forma de pisar ou caminhar, bem como mudanças estéticas.
-               <a href="https://pt.wikipedia.org/wiki/Podologia" target="_blank"><button>Clique para saber mais</button></a></span></div>
-
-
-               <div class="artigo2"><span><h3>Ácido hialurônico</h3>O ácido hialurônico é uma substância recomendada para todos os tipos de pele. Porém, ele é especialmente recomendado para pele seca ou pele desidratada por conta da sua alta capacidade de hidratação. Se você tem pele oleosa ou pele com cravos e espinhas, pode utilizar o ácido hialurônico sem medo.
-                <a href="https://pt.wikipedia.org/wiki/%C3%81cido_hialur%C3%B4nico" target="_blank"><button>Clique para saber mais</button></a></span><img src="./assets/imagens/preenchimento-labial.jfif" alt="Imagem preenchimento labial"></div>
+               <div class="artigo1"><img src="./assets/imagens/preenchimento-labial.jfif" alt="Imagem preenchimento labial"><span>
+                <h3>Ácido hialurônico</h3>O ácido hialurônico é uma substância recomendada para todos os tipos de pele. Porém, ele é especialmente recomendado para pele seca ou pele desidratada por conta da sua alta capacidade de hidratação. Se você tem pele oleosa ou pele com cravos e espinhas, pode utilizar o ácido hialurônico sem medo.
+               <a href="#" ><button>Clique para saber mais</button></a></span></div>
+               
           </section>
-    <div class="tituloSection">Depoimentos</div>
-<section class="section3">
-  <div class="cardDepoimentos">
-      <img src="./assets/imagens/depoimento1.jpg" alt="Imagem cliente depoimentos">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</span>
-    </div>
-  <div class="cardDepoimentos">
-      <img src="./assets/imagens/depoimento2.jpg" alt="Imagem cliente depoimentos">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</span>
-    </div>
-  <div class="cardDepoimentos">
-      <img src="./assets/imagens/depoimento3.jpg" alt="Imagem cliente depoimentos">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</span>
-    </div>
+      <div class="botaoSubirPagina"><a href="#menu-topo">Top</a></div>
 
-  </section>
-      <button id="botaoComentar">Deixe seu depoimento</button>
-      <div class="digitarDepoimentos hide">
-      <textarea cols="30" rows="7" maxlength="230" id="depoimentoCliente"></textarea>
-      <button class="postarDepoimento">Enviar</button>
+      <h1 id="tituloAntesDepois">Clientes que tiveram sua autoestima renovada...</h1>
+<section class="antesEdepois">
+<!-- BOOTSTRAP -->
+      <div class="carrosselAntesDepois">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/imagens/antes e depois.jpg" class="d-block w-100" alt="Imagem de antes e depois de cliente" class="imgBannerMobile">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/imagens/antes e depois (1).jpg" class="d-block w-100" alt="Imagem de antes e depois de cliente" class="imgBannerMobile">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/imagens/antes e depois (2).jpg" class="d-block w-100" alt="Imagem de antes e depois de cliente" class="imgBannerMobile">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/imagens/antes e depois (3).jpg" class="d-block w-100" alt="Imagem de antes e depois de cliente" class="imgBannerMobile">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
       </div>
+<!-- FIM BOOTSTRAP -->
+      <div class="cardAntesDepois">
+        <img id="imgAntesDepois" src="./assets/imagens/antes e depois.jpg" alt="Imagem antes e depois cliente">
+      </div>
+      <div class="cardAntesDepois">
+        <img id="imgAntesDepois" src="./assets/imagens/antes e depois (1).jpg" alt="Imagem antes e depois cliente">
+      </div>
+      <div class="cardAntesDepois">
+        <img id="imgAntesDepois" src="./assets/imagens/antes e depois (2).jpg" alt="Imagem antes e depois cliente">
+      </div>
+      <div class="cardAntesDepois">
+        <img id="imgAntesDepois" src="./assets/imagens/antes e depois (3).jpg" alt="Imagem antes e depois cliente">
+      </div>
+      <div class="cardAntesDepois">
+        <img id="imgAntesDepois" src="./assets/imagens/antes e depois (1).jpg" alt="Imagem antes e depois cliente">
+      </div>
+      </section>
+      <div class="tituloSection">Depoimentos</div>
+<section class="section3">
+      <div class="cardDepoimentos">
+          <img src="./assets/imagens/depoimento1.jpg" alt="Imagem cliente depoimentos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</span>
+        </div>
+      <div class="cardDepoimentos">
+          <img src="./assets/imagens/depoimento2.jpg" alt="Imagem cliente depoimentos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</span>
+        </div>
+      <div class="cardDepoimentos">
+          <img src="./assets/imagens/depoimento3.jfif" alt="Imagem cliente depoimentos">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum labore voluptatum, tempora voluptates culpa, perferendis est reiciendis saepe doloribus unde cupiditate dignissimos deserunt veritatis assumenda animi quos temporibus nostrum beatae!</span>
+        </div>
+      </section>
+          <button id="botaoComentar">Deixe seu depoimento</button>
+          <div class="loginDepoimentos hide">
+            <h3>Primeiro faça login:</h3>
+            <label for="seuEmailDepoimentos">E-mail:</label>
+            <input type="email" id="seuEmailDepoimentos" placeholder="Digite seu e-mail" required><br>
+            <label for="suaSenhaDepoimentos">Senha:</label>
+            <input type="password" id="suaSenhaDepoimentos" placeholder="Digite sua senha" required><br>
+            <button class="botaoLoginDepoimentos">Entrar</button><br>
+            Ainda não tem cadastro? <a href="./assets/html/registro.html" id="botao-cadastro">Registre-se</a>
+          </div>
+          <div class="digitarDepoimentos hide">
+          <textarea cols="30" rows="7" maxlength="230" id="depoimentoCliente"></textarea>
+          <button class="postarDepoimento">Enviar</button>
+          </div>
 <div class="bannerAgendamento">
             <video autoplay loop muted>
-              <source src="./assets/video/video-banner.mp4" type="video/mp4">
+            <source src="./assets/video/video-banner.mp4" type="video/mp4">
             </video>
             <h1>Agende a sua avaliação agora mesmo<br>
             <h2>e converse com um de nossos especialistas.</h2></h1>
@@ -175,7 +229,11 @@
             <div class="contatos">
             Clínica SENAI <br><span class="material-symbols-outlined">
               call 
-              </span> 0800-999-999</div>
+              </span> 0800-999-999
+            </div>
+              <div id="map">
+                <iframe id="googleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.6834917530828!2d-48.072287623913354!3d-15.820634523603644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3391b366fc47%3A0x88c16b784a3ad98f!2sSenai%20Taguatinga!5e0!3m2!1spt-BR!2sbr!4v1696600831943!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             <div class="links-footer">
               <ul>
                 <li><a href="#">Sobre nós</a></li>

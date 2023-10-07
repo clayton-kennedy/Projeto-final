@@ -1,4 +1,57 @@
-@media screen and (max-width: 2560px) {
+@media (min-width: 200px) {
+     .section1 {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          width: 95vw;
+          height: auto;
+          margin: 10px auto;
+     }
+     .promocoes {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: auto;
+          margin: 10px 20px;
+     }
+     .promocoes img {
+          border-radius: 50px 0px 50px 0;
+          width: 15em;
+          height: 15em;
+          object-fit: cover;
+          user-select: none;
+          border: 1px solid #00b0d3;
+     }
+     .promocoes img:hover {
+          cursor: pointer;
+          filter: brightness(1.1);
+     }
+     .promocoes span{
+          display: block;
+          text-align: justify;
+          justify-content: space-around;
+          width: 95%;
+          height: auto;
+     }
+     .comprarPromocao {
+          padding: 3px;
+          width: 95%;
+          background-color: #00b0d3;
+          border-radius: 20px;
+          color: white;
+          font-size: 1.1em;
+          font-weight: 400;
+          letter-spacing: 1px;
+          border: 1px solid #006074;
+     }
+     .comprarPromocao:hover {
+          background-color: #32b7d1;
+     }
+}
+@media (min-width: 500px) {
 .section1 {
      display: flex;
      flex-direction: row;
@@ -20,11 +73,11 @@
 .promocoes img {
      -webkit-border-top-left-radius: 50px;
      -webkit-border-bottom-right-radius: 50px;
-     width: 250px;
-     height: 250px;
+     width: 15em;
+     height: 15em;
      object-fit: cover;
      user-select: none;
-     border: 1px solid #0fc3e8;
+     border: 1px solid #00b0d3;
 }
 .promocoes img:hover {
      cursor: pointer;
@@ -40,15 +93,15 @@
 .comprarPromocao {
      padding: 3px;
      width: 130px;
-     background-color: #0fc3e8;
+     background-color: #00b0d3;
      border-radius: 20px;
      color: white;
      font-size: 1.1em;
      font-weight: 400;
      letter-spacing: 1px;
-     border: 1px solid #0088a3;
+     border: 1px solid #006074;
 }
 .comprarPromocao:hover {
-     background-color: #51d1eb;
+     background-color: #32b7d1;
 }
 }

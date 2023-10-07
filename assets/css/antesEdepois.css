@@ -1,0 +1,99 @@
+@media (min-width: 200px){
+     .antesEdepois {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 95%;
+          height: 350px;
+          padding: 1em;
+          overflow: hidden;
+          cursor: pointer;
+          margin: 0 auto;
+     }
+     .carrosselAntesDepois {
+          width: 100%;
+          height: 200px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .carrosselAntesDepois img {
+          width: 500px;
+          height: 500px;
+          object-fit: contain;
+     }
+     #tituloAntesDepois {
+          background-color: #00b0d3;
+          width: 99%;
+          color: white;
+          font-weight: bold;
+          text-align: center;
+          font-size: 2em;
+          padding: 1em;
+          margin: 10px auto;
+          align-items: center;
+          justify-content: center;
+     }
+     .cardAntesDepois {
+          display: none;
+     }
+}
+@media (min-width: 750px) {
+     .antesEdepois {
+          width: 100%;
+          height: 530px;
+     }
+}
+@media (min-width: 1000px){
+     .antesEdepois {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: 95%;
+          height: 400px;
+          padding: 1em;
+          cursor: pointer;
+          margin: 0 auto;
+     }
+     #tituloAntesDepois {
+          text-align: center;
+          margin: 1em auto;
+     }
+     .carrosselAntesDepois {
+          display: none;
+     }
+     .cardAntesDepois {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 20px;
+          width: 90%;
+          height: 300px;
+          flex-wrap: nowrap;
+          padding: 1em;
+     }
+     .antesEdepois img {
+          user-select: none;
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          overflow: hidden;
+          width: 300px;
+          height: 300px;
+          border: 2px solid #00b0d3;
+          border-radius: 50px 0 50px 0;
+          filter: grayscale(40%);
+     }
+     .antesEdepois img:hover {
+          filter: none;
+          filter: brightness(1.1);
+     }
+     .antesEdepois img:active {
+          transition: 0.3s;
+          transform: scale(1.4);
+          overflow: visible;
+          z-index: 200;
+     }
+}

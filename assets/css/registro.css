@@ -1,48 +1,199 @@
-@import url(./geral.css);
-@import url(./bannerAgendamento.css);
-@import url(./carrossel.css);
 @import url(./footer.css);
+@import url(./geral.css);
 @import url(./menu-topo.css);
-@import url(./section1.css);
-@import url(./section2.css);
-@import url(./section3.css);
-@import url(./tela_login.css);
-@import url(./agendamento.css);
-@import url(./agendadado.css);
 
-#criarConta {
-     width: 45%;
-     height: 100vh;
-     max-height: 700px;
-     display: flex;
-     align-items: center;
-     justify-content: space-around;
-     margin: auto;
+@media (min-width: 200px) {
+     #criarConta {
+          width: 98vw;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 0;
+     }
+     #criarConta a {
+          text-decoration: none;
+          color: black;
+     }
+     .dadosPessoais {
+          width: 100%;
+          margin: 0 1em;
+     }
+     .dadosPessoais input, .dadosAcesso input{
+          width: 90%;
+          padding: 0.2em 0.5em;
+          margin: 0 auto;
+          border-radius: 5px;
+          outline: none;
+     }
+     .dadosAcesso {
+          width: 100%;
+          margin: 2em 1em;
+     }
+     #botaoCriarCadastro {
+          margin: 10px auto;
+          cursor: pointer;
+          padding: 0.5em 1em;
+          border-radius: 10px;
+     }
+     #botaoCriarCadastro:hover {
+          background-color: #3edfff;
+     }
+     #msgErro {
+          display: none;
+          color: red;
+     }
+     #msgErroCEP {
+          display: none;
+          color: red;
+     }
+     #msgErroEmail {
+          display: none;
+          color: red;
+     }
+     #msgErroSenha {
+          display: none;
+          color: red;
+     }
+     .modalCEP {
+          display: none;
+          cursor: not-allowed ;
+     }
+     .modalCEP input {
+          background-color: #cdcdcd;
+     }
+     .modalCEP > #numeroCasa {
+          background-color: white;
+     }
 }
-#criarConta a {
-     text-decoration: none;
-     color: black;
+@media (min-width: 750px) {
+     #criarConta {
+          width: 80vw;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0;
+     }
+     #criarConta a {
+          text-decoration: none;
+          color: black;
+     }
+     .dadosPessoais {
+          width: 100%;
+          margin: 0 1em;
+     }
+     .dadosPessoais input, .dadosAcesso input{
+          width: 90%;
+          padding: 0.5em 1.2em;
+          margin: 5px auto;
+          border-radius: 5px;
+          outline: none;
+     }
+     .dadosAcesso {
+          width: 100%;
+          margin: 2em 1em;
+     }
+     #botaoCriarCadastro {
+          margin: 10px auto;
+          cursor: pointer;
+          padding: 0.5em 1em;
+          border-radius: 10px;
+     }
+     #botaoCriarCadastro:hover {
+          background-color: #3edfff;
+     }
+     #msgErro {
+          display: none;
+          color: red;
+     }
+     #msgErroCEP {
+          display: none;
+          color: red;
+     }
+     #msgErroEmail {
+          display: none;
+          color: red;
+     }
+     #msgErroSenha {
+          display: none;
+          color: red;
+     }
+     .modalCEP {
+          display: none;
+          cursor: not-allowed ;
+     }
+     .modalCEP input {
+          background-color: #cdcdcd;
+     }
+     .modalCEP > #numeroCasa {
+          background-color: white;
+     }
 }
-.dadosPessoais {
-     width: 50%;
-}
-.dadosPessoais input, .dadosAcesso input{
-     width: 70%;
-     padding: 0.2em 0.5em;
-     margin: 3px auto;
-     border-radius: 5px;
-     outline: none;
-}
-.dadosAcesso {
-     width: 50%;
-}
-#botaoCriarCadastro {
-     margin: 10px auto;
-     cursor: pointer;
-     padding: 0.5em 1em;
-     border-radius: 10px;
-}
-#botaoCriarCadastro:hover {
-     background-color: #0fc3e8;
-     
+@media (min-width: 1000px) {
+     #criarConta {
+          width: 70vw;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          align-content: center;
+          justify-content: space-between;
+          margin: 0 auto;
+          padding: 1em 0;
+     }
+     #criarConta a {
+          text-decoration: none;
+          color: black;
+     }
+     .dadosPessoais {
+          width: 48%;
+          margin: 0 1em;
+          justify-content: flex-start;
+     }
+     .dadosPessoais input, .dadosAcesso input{
+          width: 90%;
+          padding: 0.5em 1.2em;
+          margin: 5px auto;
+          border-radius: 5px;
+          outline: none;
+     }
+     .dadosAcesso {
+          width: 48%;
+          margin: 0 1em;
+     }
+     #botaoCriarCadastro {
+          margin: 10px auto;
+          cursor: pointer;
+          padding: 0.5em 1em;
+          border-radius: 10px;
+     }
+     #botaoCriarCadastro:hover {
+          background-color: #3edfff;
+     }
+     #msgErro {
+          display: none;
+          color: red;
+     }
+     #msgErroCEP {
+          display: none;
+          color: red;
+     }
+     #msgErroEmail {
+          display: none;
+          color: red;
+     }
+     #msgErroSenha {
+          display: none;
+          color: red;
+     }
+     .modalCEP {
+          display: none;
+          cursor: not-allowed ;
+     }
+     .modalCEP input {
+          background-color: #cdcdcd;
+     }
+     .modalCEP > #numeroCasa {
+          background-color: white;
+     }
 }

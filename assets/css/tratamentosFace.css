@@ -1,0 +1,10 @@
+@import url(./footer.css);
+@import url(./geral.css);
+@import url(./menu-topo.css);
+
+@media (min-width: 200px) {
+#Tratamentos-Face {
+     width: 99%;
+     height: 500px;
+}
+}

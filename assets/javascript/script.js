@@ -1,4 +1,3 @@
 import { mostrarMenu } from './menuHamburguer.js';
+import { initMap } from './apiGoogleMaps.js';
 
-const iconeMenu = document.getElementById('iconeMenu');
-iconeMenu.addEventListener('click', mostrarMenu);

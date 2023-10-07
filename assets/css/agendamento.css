@@ -1,64 +1,115 @@
-@import url(./geral.css);
-@import url(./bannerAgendamento.css);
-@import url(./carrossel.css);
 @import url(./footer.css);
+@import url(./geral.css);
 @import url(./menu-topo.css);
-@import url(./section1.css);
-@import url(./section2.css);
-@import url(./section3.css);
-@import url(./tela_login.css);
 
-#campoAgendamento {
-     width: 60%;
-     height: 700px;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin: 150px auto;
+
+@media (min-width: 200px) {
+     #campoAgendamento {
+          width: 90vw;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 5em auto;
+     }
+     #campoAgendamento a {
+          text-decoration: none;
+          color: black;
+     }
+     #campoAgendamento img {
+          display: none;
+          width: 36em;
+          height: 40em;
+          user-select: none;
+          margin: 0 2em;
+     }
+     .agendamento {
+          width: 100%;
+          display: none;
+          flex-direction: column;
+          justify-content: center;
+     }
+     .agendamento input {
+          padding: 0.2em 1em;
+          width: 80%;
+          margin: 0.4em;
+          border-radius: 0.1em;
+          outline: none;
+     }
+     #dataAgendamento, #numeroWhats {
+          max-width: 40%;
+     }
+     #botaoAgendamento {
+          border-radius: 5px;
+          margin: 1em auto;
+          padding: 1em 2em;
+          background-color: #3edfff;
+     }
+     #comentarioCliente {
+          border-radius: 0.5em;
+     }
+     #qualMedico {
+          padding: 0.5em 1em;
+          border-radius: 0.5em;
+          margin: 0.5em 0;
+          max-width: 40%;
+     }
+     #comentarioCliente {
+          padding: 1em;
+     }
+     .loginAgendamento {
+          width: 100vw;
+          height: auto;
+          padding: 1em;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+     }
+     .loginAgendamento input {
+          border-radius: 0.3em;
+          width: 80%;
+          padding: 0.4em 0.8em;
+     }
+     #botaoLoginAgendamento {
+          background-color: #3edfff;
+          padding: 0.4em 0.8em;
+          border-radius: 0.4em;
+     }
 }
-#campoAgendamento a {
-     text-decoration: none;
-     color: black;
+@media (min-width: 750px) {
+     #campoAgendamento {
+          width: 90vw;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin: 5em auto;
+     }
+     #campoAgendamento img {
+          display: none;
+          width: 33em;
+          height: 30em;
+          user-select: none;
+          margin: 0 2em;
+     }
 }
-#campoAgendamento img {
-     width: 33em;
-     height: 40em;
-     user-select: none;
-     margin: 0 30px;
-}
-#campoAgendamento form {
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-}
-#campoAgendamento form > input {
-     padding: 0.2em 1em;
-     width: 80%;
-     margin: 5px;
-     border-radius: 5px;
-     outline: none;
-}
-#dataAgendamento, #numeroWhats {
-     max-width: 40%;
-}
-#botaoAgendamento {
-     border-radius: 10px;
-     margin: 10px auto;
-     padding: 1em 2em;
-}
-#comentarioCliente {
-     border-radius: 5px;
-}
-#botaoAgendamento:hover {
-     background-color: #0fc3e8;
-}
-#qualMedico {
-     padding: 0.5em 1em;
-     border-radius: 5px;
-     margin: 5px 0;
-     max-width: 40%;
-}
-#comentarioCliente {
-     padding: 1em;
+@media (min-width: 1000px) {
+     #campoAgendamento {
+          width: 70%;
+     }
+     #campoAgendamento img {
+          display: flex;
+          height: 30em;
+     }
+     .loginAgendamento {
+          width: 70%;
+     }
+     .loginAgendamento input {
+          width: 100%;
+     }
+
 }

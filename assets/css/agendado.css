@@ -1,0 +1,19 @@
+@import url(./footer.css);
+@import url(./geral.css);
+@import url(./menu-topo.css);
+
+.dadosAgendamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 30em;
+    width: 99%;
+}
+.dadosAgendamento ul {
+    list-style: none;
+}
+.dadosAgendamento li {
+    margin: 5px 0;
+}

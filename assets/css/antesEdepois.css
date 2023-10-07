@@ -1,27 +1,35 @@
-@media (min-width: 200px){
+
+@media (min-width: 200px) {
+     
      .antesEdepois {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           width: 95%;
-          height: 350px;
+          height: auto;
           padding: 1em;
-          overflow: hidden;
           cursor: pointer;
           margin: 0 auto;
+          overflow: hidden;
+     }
+     #tituloAntesDepois {
+          text-align: center;
+          margin: 1em auto;
      }
      .carrosselAntesDepois {
-          width: 100%;
-          height: 200px;
           display: flex;
           align-items: center;
           justify-content: center;
+          width: 100%;
+          height: 400px;
      }
-     .carrosselAntesDepois img {
-          width: 500px;
-          height: 500px;
-          object-fit: contain;
+     .carrosselAntesDepois img{
+          width: 100%;
+          height: 400px;
+     }
+     #imgAntesDepois {
+          display: none;
      }
      #tituloAntesDepois {
           background-color: #00b0d3;
@@ -35,27 +43,19 @@
           align-items: center;
           justify-content: center;
      }
-     .cardAntesDepois {
-          display: none;
-     }
 }
-@media (min-width: 750px) {
-     .antesEdepois {
-          width: 100%;
-          height: 530px;
-     }
-}
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
      .antesEdepois {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           width: 95%;
-          height: 400px;
+          height: auto;
           padding: 1em;
           cursor: pointer;
           margin: 0 auto;
+          overflow: hidden;
      }
      #tituloAntesDepois {
           text-align: center;
@@ -64,36 +64,35 @@
      .carrosselAntesDepois {
           display: none;
      }
-     .cardAntesDepois {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0 20px;
-          width: 90%;
-          height: 300px;
-          flex-wrap: nowrap;
-          padding: 1em;
-     }
-     .antesEdepois img {
+     #imgAntesDepois {
           user-select: none;
           display: flex;
           align-items: center;
-          justify-content: start;
+          justify-content: center;
           overflow: hidden;
           width: 300px;
-          height: 300px;
-          border: 2px solid #00b0d3;
-          border-radius: 50px 0 50px 0;
+          height: 200px;
+          margin: 0 1em;
+          border-radius: 15px;
           filter: grayscale(40%);
      }
-     .antesEdepois img:hover {
+     #imgAntesDepois:hover {
           filter: none;
           filter: brightness(1.1);
      }
-     .antesEdepois img:active {
+     #imgAntesDepois:active {
+          position: absolute;
+          z-index: 10000;
+          object-fit: contain;
           transition: 0.3s;
-          transform: scale(1.4);
+          transform: scale(2.2);
           overflow: visible;
-          z-index: 200;
+          filter: none;
+     }
+}
+@media (min-width: 1250px) {
+     #imgAntesDepois {
+          width: 300px;
+          height: 300px;
      }
 }

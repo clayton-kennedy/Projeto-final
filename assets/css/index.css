@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap'); */
 
 @import url(./agendamento.css);
 @import url(./antesEdepois.css);
@@ -6,7 +5,6 @@
 @import url(./carrossel.css);
 @import url(./esqueceu.css);
 @import url(./footer.css);
-@import url(./geral.css);
 @import url(./lipoaspiracao.css);
 @import url(./menu-topo.css);
 @import url(./registrado.css);
@@ -22,7 +20,6 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     /* font-family: 'Roboto', sans-serif; */
      font-family: Arial, sans-serif;
      color: black;
 }

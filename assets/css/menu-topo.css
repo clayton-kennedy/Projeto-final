@@ -66,19 +66,16 @@
      }
      #botao-login {
           background-color: #00c8ef;
-          padding: 0.5em;
+          padding: 0.5em 1em;
           height: auto;
-          width: 10em;
+          width: auto;
           border-radius: 0.8em;
           border: 1px solid #004755;
           box-shadow: 1px 1px 0.4em rgb(198, 198, 198);
-          font-weight: bold;
      }
      #botao-login a {
-          font-weight: 400;
           letter-spacing: 1px;
           font-size: 1.3em;
-          font-weight: bold;
           text-decoration: none;
           color: black;
      }
@@ -155,9 +152,9 @@
           margin: 0;
      }
      #botao-login {
-          height: 50px;
-          width: 12em;
-          padding-bottom: 1em;
+          padding: 0;
+          height: auto;
+          width: auto;
      }
      .dropdown-menu {
           display: none;
@@ -185,22 +182,15 @@
 
      
 }
-@media (min-width: 1500px) {
+@media (min-width: 1250px) {
           #menu-topo {
                display: flex;
                align-items: center;
                justify-content: space-between;
                width: 90%;
-               height: 4.3em;
+               height: 5.5em;
                margin: 0 auto;
-          }
-          #botao-login {
-               padding: 0;
-               margin: 0;
-               display: flex;
-               text-align: center;
-               align-items: center;
-               justify-content: center;
+               padding: 0.3em 1em;
           }
           .logo h1 {
                font-size: 2em;
@@ -230,6 +220,13 @@
                color: black;
                text-decoration: none;
                font-size: 0.9em;
+          }
+          #botao-login {
+               padding: 0.5em 0;
+               display: flex;
+               text-align: center;
+               align-items: center;
+               justify-content: center;
           }
           .dropdown-menu {
                display: none;

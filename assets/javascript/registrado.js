@@ -21,7 +21,7 @@ novoHTML.innerHTML = `
         <h3>Dados da Conta</h3>
         <ul id="ulDadosCadastro">
             <li>E-mail: ${dadosCadastro.seuEmail}</li>
-            <li>Senha: *** <a href="#">Mudar</a></li>
+            <li>Senha: *** <a href="#" id="mudarSenha">Mudar</a></li>
         </ul>
     </div>
 `;

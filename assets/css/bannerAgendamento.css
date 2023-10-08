@@ -82,5 +82,7 @@
      .bannerAgendamento {
           margin: 6em auto 0 auto;
      }
-
+     .bannerAgendamento video {
+          width: 100%;
+     }
 }

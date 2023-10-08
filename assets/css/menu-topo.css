@@ -130,17 +130,21 @@
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          width: 100vw;
+          width: 95vw;
           height: 5em;
           margin: 0;
           padding: 0;
+     }
+     .logo h1 {
+          font-size: 1.6em;
+          margin: 0 1em;
      }
      #menu-navegacao {
           width: 100%;
           display: flex;
           list-style: none;
           margin: 0;
-          padding: 0 0.4em;
+          padding: 0;
           top: 0;
           align-items: center;
           text-align: center;

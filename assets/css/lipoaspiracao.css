@@ -58,6 +58,8 @@
      font-weight: 500;
 }
 .lipo img {
-     width: 80%;
+     margin: auto;
+     width: 100%;
+     height: 100%;
 }
 }

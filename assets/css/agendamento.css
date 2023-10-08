@@ -104,6 +104,23 @@
      #campoAgendamento img {
           display: flex;
           height: auto;
+          width: 40%;
+     }
+     .loginAgendamento {
+          width: 70%;
+     }
+     .loginAgendamento input {
+          width: 100%;
+     }
+
+}
+@media (min-width: 1250px) {
+     #campoAgendamento {
+          width: 70%;
+     }
+     #campoAgendamento img {
+          display: flex;
+          height: auto;
      }
      .loginAgendamento {
           width: 70%;

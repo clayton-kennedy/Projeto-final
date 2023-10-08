@@ -4,17 +4,17 @@
      }
      .carrossel-mobile {
           width: 100%;
-          height: auto;
+          height: 600px;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 4.3em auto;
+          margin: 0 auto;
           z-index: -1;
      }
      .carrossel-mobile img{
-          width: 99%;
-          height: auto;
-          object-fit:fill ;
+          width: 700px;
+          height: 600px;
+          object-fit:contain ;
      }
 }
 @media (min-width: 1000px) {

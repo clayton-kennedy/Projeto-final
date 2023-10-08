@@ -49,7 +49,7 @@
      }
      #msgErroEmail {
           display: none;
-          color: red;
+          color: #ff0000;
      }
      #msgErroSenha {
           display: none;

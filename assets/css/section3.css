@@ -21,6 +21,10 @@
           border-radius: 50px 0px 50px 0;
           box-shadow: 0 0 10px #b4b4b4;
           margin: 10px 25px;
+          text-transform: capitalize;
+          text-indent: 10%;
+          font-style: italic;
+          font-size: 0.9em;
      }
      .cardDepoimentos span {
           margin: 0.5em 0;
@@ -31,6 +35,12 @@
           border-radius: 50%;
           margin: 0 auto;
           object-fit: cover;
+     }
+     .cardDepoimentos h4 {
+          text-align: center;
+          font-style: normal;
+          text-indent: 0%;
+          margin: 0.5em 0;
      }
      #botaoComentar {
           display: flex;

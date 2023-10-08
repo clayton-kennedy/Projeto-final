@@ -20,7 +20,7 @@ botaoComentar.addEventListener('click', (evento) => {
             loginDepoimentos.classList.toggle('hide');
         }
     })
-botaoLoginDepoimentos.addEventListener('click', (e) => {
+botaoLoginDepoimentos.addEventListener('click', () => {
 const seuEmailDepoimentos = document.querySelector('#seuEmailDepoimentos').value;
 const suaSenhaDepoimentos = document.querySelector('#suaSenhaDepoimentos').value;
     if (seuEmailDepoimentos === dadosCadastro.seuEmail && suaSenhaDepoimentos === dadosCadastro.suaSenha) {
@@ -40,7 +40,8 @@ const depoimento = document.createElement('div');
         depoimento.innerHTML = `
             <div class="cardDepoimentos">
                 <img src="./assets/imagens/depoimento0.jpg" alt="Imagem cliente depoimentos">
-                <span id="depoimentoCliente">${depoimentoCliente}</span>
+                <h4>${dadosCadastro.seuPrimeiroNome}</h4>
+                <span id="depoimentoCliente">"${depoimentoCliente}"</span>
             </div>
         `;
         section3.appendChild(depoimento);

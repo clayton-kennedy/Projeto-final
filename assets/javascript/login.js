@@ -14,7 +14,6 @@ botaoLogin.addEventListener('click', (e) =>{
     const email = document.querySelector('#email').value;
     const senha = document.querySelector('#senha').value;
 if (dadosCadastro && email == dadosCadastro.seuEmail && senha == dadosCadastro.suaSenha){
-    console.log(dadosCadastro.logado);
     dadosCadastro.logado = 1;
     localStorage.setItem('dadosCadastro', JSON.stringify(dadosCadastro));
     window.location.href = 'registrado.html';

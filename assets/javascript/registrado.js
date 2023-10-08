@@ -10,7 +10,7 @@ novoHTML.innerHTML = `
     <div class="dadosCadastro">
         <h3>Dados Pessoais</h3>
         <ul id="ulDadosCadastro">
-            <li>Nome completo: ${dadosCadastro.seuNome}</li>
+            <li>Nome completo: ${dadosCadastro.seuPrimeiroNome} ${dadosCadastro.seuSobrenome}</li>
             <li>Telefone celular: ${dadosCadastro.telefoneCelular}</li>
             <li>Telefone residêncial: ${dadosCadastro.telefoneResidencial}</li>
             <li>Data de nascimento: ${dadosCadastro.dataNascimento}</li>
@@ -28,7 +28,6 @@ novoHTML.innerHTML = `
 campoRegistro.appendChild(novoHTML);
 
 botaoDeslogar.addEventListener('click', () => {
-    confirm('Deseja realmente sair?')
     dadosCadastro.logado = 0;
     localStorage.setItem('dadosCadastro', JSON.stringify(dadosCadastro));
     window.location.href = 'tela_login.html';

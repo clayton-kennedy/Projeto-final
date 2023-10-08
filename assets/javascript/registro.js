@@ -2,15 +2,18 @@
 const botaoCriarCadastro = document.querySelector('#botaoCriarCadastro');
 
 botaoCriarCadastro.addEventListener('click', (e) => {
-    e.preventDefault();
 
-    const seuNome = document.querySelector('#seuNome').value;
+    const seuPrimeiroNome = document.querySelector('#seuPrimeiroNome').value;
+    const seuSobrenome = document.querySelector('#seuSobrenome').value;
     const telefoneCelular = document.querySelector('#telefoneCelular').value;
     const telefoneResidencial = document.querySelector('#telefoneResidencial').value;
     const dataNascimento = document.querySelector('#dataNascimento').value;
 
-    const cpf = document.querySelector('#cpf').value;
-    const seuCEP = document.querySelector('#cep').value;
+    let cpf = document.querySelector('#cpf').value;
+    cpf = cpf.replace("-", "");
+    cpf = cpf.replace(".", "");
+    let seuCEP = document.querySelector('#cep').value;
+    seuCEP = seuCEP.replace("-", "");
     const seuLogradouro = document.querySelector('#logradouro').value;
     const seuBairro = document.querySelector('#bairro').value;
     const seuUF = document.querySelector('#uf').value;
@@ -26,6 +29,10 @@ botaoCriarCadastro.addEventListener('click', (e) => {
     const msgErro = document.querySelector('#msgErro');
     const logado = 1;
 
+    msgErro.style.color = '#ff0000';
+    msgErroSenha.style.color = '#ff0000';
+    msgErroEmail.style.color = '#ff0000';
+
     if (seuEmail != confirmarSeuEmail) {
         msgErroEmail.style.display = 'block';
     } else if (suaSenha != confirmarSuaSenha) {
@@ -38,7 +45,8 @@ botaoCriarCadastro.addEventListener('click', (e) => {
         msgErroEmail.style.display = 'none';
 
         const dadosCadastro = {
-          seuNome,
+          seuPrimeiroNome,
+          seuSobrenome,
           telefoneCelular,
           telefoneResidencial,
           dataNascimento,

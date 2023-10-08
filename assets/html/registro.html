@@ -74,19 +74,21 @@
           <article class="dadosPessoais">
             <h4>Dados Pessoais</h4><br>
             <form >
-            <label for="seuNome">Nome completo:*</label><br>
-            <input type="text" id="seuNome"required placeholder="Seu nome completo"><br>
+            <label for="seuNome">Primeiro nome:*</label><br>
+            <input type="text" id="seuPrimeiroNome" placeholder="Seu primeiro nome" required><br>
+            <label for="seuSobrenome">Sobrenome:*</label><br>
+            <input type="text" id="seuSobrenome" placeholder="Seu sobrenome" required><br>
             <label for="telefoneCelular">Telefone celular:*</label><br>
-            <input type="tel" id="telefoneCelular" placeholder="Ex: (61)99999-9999" required><br>
+            <input type="number" id="telefoneCelular" placeholder=" (xx)xxxxx-xxxx"  required><br>
             <label for="telefoneResidencial">Telefone residêncial:*</label><br>
-            <input type="tel" id="telefoneResidencial" placeholder="Ex: (61)99999-9999" required><br>
+            <input type="number" id="telefoneResidencial" placeholder=" (xx)xxxxx-xxxx" required><br>
             <label for="dataNascimento">Data de nascimento:*</label><br>
             <input type="date" id="dataNascimento" placeholder="Ex: 01/01/2000" required><br>
             <label for="cpf">CPF:*</label><br>
-            <input type="tel" id="cpf" placeholder="Digite somente números" required maxlength="11"><br> 
+            <input type="number" id="cpf" placeholder="Digite somente números" maxlength="11" required><br> 
             <span id="msgErro"><small>Formato inválido!</small></span>
             <label for="cpf">CEP:*</label><br>
-            <input type="number" id="cep" placeholder="Digite somente números" required maxlength="8"><br> 
+            <input type="number" id="cep" placeholder="Digite somente números" maxlength="9"><br> 
             <span id="msgErroCEP"><small>CEP inválido!</small></span>
             <div class="modalCEP">
               <span><small>Número:</small></span><br>

@@ -103,7 +103,7 @@
      }
      #campoAgendamento img {
           display: flex;
-          height: 30em;
+          height: auto;
      }
      .loginAgendamento {
           width: 70%;

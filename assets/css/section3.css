@@ -148,10 +148,10 @@
           flex-direction: column;
           align-self: flex-start;
           justify-content: flex-start;
-          padding: 0 1em;
+          padding: 0.3em 1em;
           border-radius: 5%;
           box-shadow: 0 0 10px #b4b4b4;
-          margin: 10px 15px;
+          margin: 10px 0;
           overflow: hidden;
      }
      .cardDepoimentos span{

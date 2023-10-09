@@ -60,15 +60,13 @@
                 </div>
               </li>
               <li class="nav-item"><a href="../html/agendamento.html">Agendamento</a></li>
-              <li class="nav-item dropdown" id="botao-login"><a href="../html/tela_login.html">Sua Conta</a>
-              <div class="dropdown-menu">
-                <a href="../html/agendamento.html" id="sair">Deslogar</a>
+              <li class="nav-item" id="botao-login"><a href="../html/tela_login.html">Sua Conta</a>
               </li>
               </div>
               </ul>
 </nav>
 </header>
-     <div class="tituloSection">Agende sua consulta</div>
+  <div class="tituloSection2">Agende sua consulta</div>
 <section id="campoAgendamento">
       <img src="../imagens/mulher agendamento.png" alt="Imagem médica com uma prancheta">
 
@@ -85,26 +83,45 @@
     <div class="agendamento">
      <form>
           <h2>Agende uma avaliação gratuitamente e descubra o melhor procedimento para você:</h2><br>
-          <label for="nomeCliente">Nome*</label><br>
-          <input type="text" id="nomeCliente" name="nomeCliente" required><br>
-          <label for="emailCliente">Email*</label><br>
-          <input type="email" required id="emailCliente"><br>
-          <label for="numeroWhats">WhatsApp*</label><br>
-          <input type="tel" id="numeroWhats" maxlength="11" required><br>
-          <label for="dataAgendamento">Data e Horário*</label><br>
-          <input type="datetime-local" id="dataAgendamento" required><br>
+          <label for="dataAgendamento">Data*</label><br>
+          <input type="date" id="dataAgendamento" required><br>
+
+          <label for="horarioAgendamento">Horário*</label><br>
+          <select id="horarioAgendamento"><br>
+            <option>08:00</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+            <option>18:00</option>
+            </select><br>
+
+            <label for="tipoAtendimento">Tipo de atendimento:</label><br>
+            <select id="tipoAtendimento"><br>
+              <option>Tratamento para a Face</option>
+              <option>Tratamento para o Corpo</option>
+              <option>Tratamento Capilar</option>
+            </select><br>
+
           <label for="medico">Com qual médico(a)?</label><br>
           <select id="qualMedico"><br>
-               <option>Amanda Souza</option>
-               <option>Beatriz Bittencourt</option>
-               <option>Carlos Pereira</option>
-               <option>Joana Marques</option>
-               <option>Jonas Jhonson</option>
-               <option>Lucas Moraes</option>
-               <option>Michele Obama</option>
-           </select><br>
+            <option>Amanda Souza</option>
+            <option>Beatriz Bittencourt</option>
+            <option>Carlos Pereira</option>
+            <option>Joana Marques</option>
+            <option>Jonas Jhonson</option>
+            <option>Lucas Moraes</option>
+            <option>Michele Obama</option>
+        </select><br>
+
           <label for="comentarioCliente">Comentário:</label><br>
           <textarea id="comentarioCliente" rows="3" cols="40"></textarea><br>
+
           <a href="./agendado.html"><button id="botaoAgendamento">AGENDAR A SUA AVALIAÇÃO</a></button>
           </form>
     </div>

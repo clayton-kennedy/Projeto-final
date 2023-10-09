@@ -45,8 +45,6 @@ const depoimento = document.createElement('div');
             </div>
         `;
         section3.appendChild(depoimento);
-        depoimentoCliente.value = '';
-        dadosCadastro.logado = 0;
-        localStorage.setItem('dadosCadastro', JSON.stringify(dadosCadastro));
+        document.querySelector('#depoimentoCliente').value = '';
         digitarDepoimentos.classList.add('hide');
 })

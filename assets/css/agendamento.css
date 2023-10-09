@@ -37,8 +37,11 @@
           border-radius: 0.1em;
           outline: none;
      }
-     #dataAgendamento, #numeroWhats {
-          max-width: 40%;
+     #dataAgendamento, #horarioAgendamento, #tipoAtendimento {
+          max-width: 60%;
+          padding: 0.5em;
+          border-radius: 10px;
+          margin: 5px 0;
      }
      #botaoAgendamento {
           border-radius: 5px;
@@ -99,12 +102,12 @@
 }
 @media (min-width: 1000px) {
      #campoAgendamento {
-          width: 70%;
+          width: 90%;
      }
      #campoAgendamento img {
           display: flex;
           height: auto;
-          width: 40%;
+          width: 60%;
      }
      .loginAgendamento {
           width: 70%;

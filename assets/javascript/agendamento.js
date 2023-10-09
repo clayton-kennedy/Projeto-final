@@ -13,6 +13,7 @@ if (dadosCadastro && dadosCadastro.logado == 1) {
     localStorage.setItem('dadosCadastro', JSON.stringify(dadosCadastro));
  } else {
     loginAgendamento.style.display = 'flex';
+ }
 botaoLoginAgendamento.addEventListener('click', () => {
     const seuEmailAgendamento = document.querySelector('#seuEmailAgendamento').value;
     const suaSenhaAgendamento = document.querySelector('#suaSenhaAgendamento').value;
@@ -27,21 +28,18 @@ botaoLoginAgendamento.addEventListener('click', () => {
     }
   });
   botaoAgendamento.addEventListener('click', () => {
-    const nomeCliente = document.querySelector('#nomeCliente').value;
-    const emailCliente = document.querySelector('#emailCliente').value;
-    const numeroWhats = document.querySelector('#numeroWhats').value;
     const dataAgendamento = document.querySelector('#dataAgendamento').value;
+    const horarioAgendamento = document.querySelector('#horarioAgendamento').value;
+    const tipoAtendimento = document.querySelector('#tipoAtendimento').value;
     const qualMedico = document.querySelector('#qualMedico').value;
     const comentarioCliente = document.querySelector('#comentarioCliente').value;
     const dadosDoAgendamento = {
-      nomeCliente,
-      emailCliente,
-      numeroWhats,
       dataAgendamento,
+      horarioAgendamento,
+      tipoAtendimento,
       qualMedico,
-      comentarioCliente
+      comentarioCliente,
     };
     localStorage.setItem('dadosAgendamento', JSON.stringify(dadosDoAgendamento));
     window.location.href = 'agendado.html';
   });
-}

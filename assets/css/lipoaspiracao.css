@@ -7,7 +7,7 @@
      width: 100%;
      height: auto;
      display: flex;
-     flex-direction: row;
+     flex-direction: column;
      align-items: flex-start;
      justify-content: space-between;
      margin: 0 auto;
@@ -15,51 +15,89 @@
 }
 #artigoLipoaspiracao img {
      display: none;
-     height: auto;
-     width: auto;
-     margin: 0.8em auto;
 }
 .lipo {
+     margin-top: 3em;
+}
+.lipo, .lipo2{
      width: 100%;
-     height: 100%;
-     padding: 2em 0;
-     margin: 2em 1.3em;
-     font-size: 1.3em;
+     padding: 1.3em;
+     font-size: 1em;
      font-weight: 500;
 }
-.lipo h1 {
+#artigoLipoaspiracao h1 {
      color: #00aacc;
      font-weight: bold;
 }
 }
+@media(min-width: 750px) {
+     .lipo {
+          margin-top: 10em;
+     }
+     .lipo2 {
+          margin-top: 0;
+     }
+}
 @media (min-width: 1000px){
      #artigoLipoaspiracao {
-     width: 100%;
-     height: auto;
-     display: flex;
-     flex-direction: row;
-     align-items: flex-start;
-     justify-content: space-between;
-     margin: 0 auto;
-     color: black;
-}
-#artigoLipoaspiracao img {
-     display: flex;
-     height: auto;
-     width: 40%;
-     margin: 0.8em auto;
-}
-.lipo {
-     width: 100%;
-     height: 100%;
-     padding: 2em 0;
-     margin: 2em 1.3em;
-     font-size: 1.3em;
-     font-weight: 500;
-}
-.lipo img {
-     margin: auto;
-     width: 100%;
-     height: 100%;
-}
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100vw;
+     }
+     #artigoLipoaspiracao img {
+          display: flex;
+     }
+     .lipo {
+          width: 95%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          font-size: 1.5em;
+     }
+     #imgLipo1 {
+          width: 50%;
+          height: auto;
+          display: flex;
+          align-items: start;
+          justify-content: flex-start;
+          float: left;
+          margin: 0em 0;
+     }
+     .lipo1 > span {
+          width: 50%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: flex-start;
+          float: right;
+          padding: 1em;
+     }
+     .lipo2 {
+          width: 95%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: center;
+          font-size: 1.5em;
+     }
+     #imgLipo2 {
+          width: 80%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+     }
+     .lipo2 > span {
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          justify-content: flex-start;
+          float: right;
+          padding: 1em;
+     }
 }

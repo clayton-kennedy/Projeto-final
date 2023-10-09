@@ -71,7 +71,7 @@
           justify-content: center;
           overflow: hidden;
           width: 300px;
-          height: 150px;
+          height: 200px;
           margin: auto 1em;
           border-radius: 15px;
           filter: grayscale(40%);
@@ -85,7 +85,7 @@
           z-index: 10000;
           object-fit: contain;
           transition: 0.3s;
-          transform: scale(2.2);
+          transform: scale(2.5);
           overflow: visible;
           filter: none;
      }
